@@ -24,6 +24,7 @@ Sly call with all default options as defined in the source.
 
 ```js
 var frame = new Sly('#frame', {
+	slidee:     null,  // Selector, DOM element, or jQuery object with DOM element representing SLIDEE.
 	horizontal: false, // Switch to horizontal mode.
 
 	// Item based navigation
@@ -82,7 +83,7 @@ var frame = new Sly('#frame', {
 	moveBy:        300,     // Speed in pixels per second used by forward and backward buttons.
 	speed:         0,       // Animations speed in milliseconds. 0 to disable animations.
 	easing:        'swing', // Easing for duration based (tweening) animations.
-	startAt:       0,       // Starting offset in pixels or items.
+	startAt:       null,    // Starting offset in pixels or items.
 	keyboardNavBy: null,    // Enable keyboard navigation by 'items' or 'pages'.
 
 	// Classes
@@ -93,6 +94,13 @@ var frame = new Sly('#frame', {
 ```
 
 # Options
+
+### slidee
+
+Type: `String|Element|Object`
+Default: `null`
+
+This option allows to manually set what will Sly use as a SLIDEE element. By default, SLIDEE is a 1st child of FRAME.
 
 ### horizontal
 
@@ -464,8 +472,8 @@ Easing function for duration based (tweening) animations. Default build in funct
 
 ### startAt
 
-Type: `Integer`
-Default: `0`
+Type: `Integer|null`
+Default: `null`
 
 Offset in pixels to start Sly at. In item based navigations, this is an item index starting at `0`.
 

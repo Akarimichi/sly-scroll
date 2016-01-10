@@ -1,5 +1,53 @@
 # Changelog
 
+**1.6.1** :: *8th Aug 2015*
+
+- Improved instance clearing and method calls when called via jQuery proxy.
+- Made `new` keyword in `new Sly()` optional.
+
+**1.6.0** :: *17th Jul 2015*
+
+- Implemented dragging threshold - distance in pixels before Sly recognizes dragging.
+- Added `dragThreshold` option, which is `3` by default.
+
+**1.5.1** :: *28th Apr 2015*
+
+- Fixed parallax mode.
+- Fixed scrolling not working when `document` or `window` was used as a scroll source.
+
+**1.5.0** :: *28th Apr 2015*
+
+- Added `slidee` option that forces Sly to use a specific SLIDEE element.
+
+**1.4.4** :: *30th Mar 2015*
+
+- Fixed `activateOn` events not bubbling when originating on interactive elements, making it impossible to bind handlers to buttons for example.
+
+**1.4.3** :: *10th Mar 2015*
+
+- Improved `scrollHijack` logic.
+- Fixed `scrollHijack` value being ignored and instead a fixed `300` was used.
+
+**1.4.2** :: *9th Mar 2015*
+
+- Fixed `scrollHijack` and `scrollTrap` options not working nicely together.
+
+**1.4.1** :: *5th Mar 2015*
+
+- Fixed dragging somehow broken by previous commits.
+
+**1.4.0** :: *5th Mar 2015*
+
+- Fixed broken `startAt`.
+- `startAt` is now optional, and resolves to `null` by default with no item being activated at the start.
+- Fixed Sly breaking in `jQuery.noConflict()` mode.
+- Fixed `.destroy()` method nuking `document` event listeners of other Sly instances. When you destroyed one Sly instance, keyboard navigation stopped working on all Sly instances.
+- Fixed last item in horizontal navigation sometimes being placed on a new line. * ***important note***
+- Fixed dragging termination (when draggin in direction opposite to Sly's) breaking `activateMiddle` functionality.
+- Fixed buttons's disabled states sometimes not being updated.
+
+\* **IMPORTANT** this was is possible only by retrieving item sizes with `getBoundingClientRect()` method, which is the only way how to get the element size with subpixel precision. This has a side effect of retrieving the item's rendered rectangle dimensions as opposed to layout dimensions. This means you can't apply CSS transforms to items anymore, as that changes element's rendered box dimensions and breaks Sly's item offsets. Apply transforms to item's children instead.
+
 **1.3.0** :: *30th Nov 2014*
 
 - `destroy()` now correctly restores previous element styles.

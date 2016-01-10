@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 	"name": "sly",
 	"version": "1.3.1",
 	"main": "dist/sly",
@@ -11,4 +12,25 @@
 		"grunt-bumpup": "~0.4.2",
 		  "grunt": "~0.4.2"
 	}
+=======
+  "name": "slyer",
+  "version": "1.7.0",
+  "main": "slyer",
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capaj/slyer.git"
+  },
+  "jspm": {
+    "dependencies": {
+      "jquery": "npm:jquery@^2.2.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+>>>>>>> patch-1
 }
