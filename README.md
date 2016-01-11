@@ -10,7 +10,7 @@ jspm i github:capaj/slyer
 
 or with npm:
 ```
-npm i slyer
+npm i https://github.com/capaj/slyer.git
 ```
 
 Sly supports navigation with:
