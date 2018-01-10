@@ -1,37 +1,21 @@
 {
   "name": "slyer",
-  "version": "1.7.1",
-  "main": "slyer",
-  "scripts": {
-    "precommit": "npm test",
-    "pretest": "node_modules/.bin/standard",
-    "test": "node run-tests"
+  "description": "Sly.js transformed into ES6",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": {
+    "name": "David Hartley"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/capaj/slyer.git"
+    "url": "git+https://github.com/D-Hartley/slyer.git"
   },
-  "jspm": {
-    "dependencies": {
-      "jquery": "npm:jquery@^2.2.0"
-    },
-    "devDependencies": {
-      "babel": "npm:babel-core@^5.8.24",
-      "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "core-js": "npm:core-js@^1.1.4"
-    }
-  },
-  "standard": {
-    "ignore": [
-      "public/config.js"
-    ]
+  "dependencies": {
+    "jquery": "^3.2.1"
   },
   "devDependencies": {
-    "babel": "^5.8.23",
-    "chai": "^3.4.1",
-    "glob": "^6.0.4",
-    "husky": "^0.10.2",
-    "mocha": "^2.3.4",
-    "standard": "^5.4.1"
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1"
   }
 }

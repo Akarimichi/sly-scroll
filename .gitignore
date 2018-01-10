@@ -1,4 +1,8 @@
+# Dependency directory
 node_modules
-jspm_packages
-config.js
-npm-debug.log*
+
+# Project files directory
+.idea/
+
+# Logs
+*.log
