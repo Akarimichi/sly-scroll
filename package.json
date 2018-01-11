@@ -2,7 +2,11 @@
   "name": "sly-scroll",
   "description": "Sly.js transformed into ES6",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack --watch"
+  },
   "author": {
     "name": "David Hartley"
   },
@@ -13,5 +17,11 @@
   },
   "dependencies": {
     "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.10.0"
   }
 }
