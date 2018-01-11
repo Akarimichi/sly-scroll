@@ -1,5 +1,5 @@
 {
-  "name": "slyer",
+  "name": "sly-scroll",
   "description": "Sly.js transformed into ES6",
   "version": "0.1.0",
   "main": "index.js",
@@ -9,13 +9,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/D-Hartley/slyer.git"
+    "url": "git+https://github.com/D-Hartley/sly-scroll.git"
   },
   "dependencies": {
     "jquery": "^3.2.1"
-  },
-  "devDependencies": {
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1"
   }
 }
