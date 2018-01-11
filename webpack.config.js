@@ -1,3 +1,4 @@
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -19,5 +20,9 @@ module.exports = {
                 loader: 'babel-loader'
             }
         ]
-    }
+    },
+
+    plugins: [
+        new UglifyJsPlugin()
+    ]
 };
